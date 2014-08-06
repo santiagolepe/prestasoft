@@ -1,0 +1,22 @@
+<%= form_for(@country) do |f| %>
+	<p>
+		<%= f.label :name, "Name:" %><br/>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :abvr %><br/>
+		<%= f.text_field :abvr %>
+	</p>
+
+	<p>
+		<%= f.label :predet %><br/>
+		<%= f.check_box :predet %>
+	</p>
+
+	<%= f.submit "Save" %>
+
+
+<% end %>
+
+
