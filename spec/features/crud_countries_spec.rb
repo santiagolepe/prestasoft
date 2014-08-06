@@ -11,7 +11,7 @@ feature 'Create coutries' do
 		check("Predet")
 		click_button('Save')
 
-		page.should have_content("Country created")
+		page.should have_content("Country has been created.")
 
 	end
 	

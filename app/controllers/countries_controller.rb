@@ -14,9 +14,14 @@ class CountriesController < ApplicationController
 		if @country.save
 			flash[:notice] = "Country has been created."
 			redirect_to @country
-			else
+		else
 			# nothing, yet
-			end
+		end
+	end
+
+	def show
+		@country=Country.find(params[:id])
+		
 	end
 
 end
