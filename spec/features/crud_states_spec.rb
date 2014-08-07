@@ -9,7 +9,7 @@ feature 'Create States' do
 		fill_in('Name', with: "Colima")
 		fill_in('Abvr', with: "Col.")
 		check('Predet')
-		select("Countries", from: 'Countries')
+		#select("Countries", from: 'Countries')
 		click_button('Save')
 
 		page.should have_content("State has been created.")
